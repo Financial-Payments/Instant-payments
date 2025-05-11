@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: #222;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login-container input,
+.login-container button {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+}
+
+.login-container input {
+  background: #333;
+  color: #fff;
+}
+
+.login-container button {
+  background: #0f0;
+  color: #000;
+  font-weight: bold;
+}
+
+.dashboard-page {
+  padding: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.balance-card {
+  margin: 1rem 0;
+  background: #008000;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.transactions .transaction {
+  background: #222;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.actions button {
+  flex: 1;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.services div {
+  background: #444;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
