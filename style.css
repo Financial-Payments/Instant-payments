@@ -15,12 +15,25 @@ body {
   gap: 0.5rem;
 }
 
-.balance-card {
-  margin: 1rem 0;
-  background: #006400;
-  padding: 1rem;
-  border-radius: 8px;
+.balance-cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* or space-between / flex-start depending on layout */
+  flex-wrap: wrap; /* Makes it responsive */
+  margin: 20px 0;
 }
+
+.balance-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+}
+
 
 .transactions .transaction {
   background: #222;
