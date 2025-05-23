@@ -69,6 +69,13 @@
       font-size: 0.95rem;
     }
 
+    /* ✅ Added styles for logo */
+    .login-logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
     @media screen and (max-width: 480px) {
       .login-container {
         padding: 2rem 1.5rem;
@@ -77,11 +84,18 @@
       .login-container h1 {
         font-size: 1.5rem;
       }
+
+      .login-logo {
+        width: 80px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="login-container">
+    <!-- ✅ Logo added -->
+    <img src="logo.png" alt="Logo" class="login-logo" />
+
     <h1>Welcome to Instant Payments</h1>
     <form id="loginForm">
       <input type="text" id="username" placeholder="Username" required />
